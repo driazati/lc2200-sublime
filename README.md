@@ -1,21 +1,11 @@
-<<<<<<< HEAD
 ## Description:
 
-**Sublime LC3** is a syntax highlighting package for LC3 16-bit assembly for **Sublime Text 2**.
+**Sublime LC-2200** is a syntax highlighting package for LC-2200 16-bit assembly for **Sublime Text**.
+
+Mostly taken from [LC3-Assembly](https://github.com/wufufufu/Sublime-LC3).
 
 ## Usage:
 
 Install:
   
-    cd .config/sublime-text-2/Packages
-    git clone git://github.com/wufufufu/Sublime-LC3.git
-
-## Edit:
-
-Download and install [AAAPackageDev](https://bitbucket.org/guillermooo/aaapackagedev).
-
-In the folder **Sublime-LC3** is the file **lc3-assembly.JSON-tmLanguage** which contains the editable JSON version of the grammar. Use *AAAPackageDev* to regenerate **lc3-assembly.tmLanguage** from this file.
-=======
-# lc2200-sublime
-sublime text syntax highlighting for LC-2200 for gatech CS-2200
->>>>>>> 300c365f910c87691aad81cdb90930b3e50280c2
+Put entire folder in sublime packages directory (preferences -> browse packages)
