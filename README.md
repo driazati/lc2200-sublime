@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Description:
 
 **Sublime LC3** is a syntax highlighting package for LC3 16-bit assembly for **Sublime Text 2**.
@@ -14,3 +15,7 @@ Install:
 Download and install [AAAPackageDev](https://bitbucket.org/guillermooo/aaapackagedev).
 
 In the folder **Sublime-LC3** is the file **lc3-assembly.JSON-tmLanguage** which contains the editable JSON version of the grammar. Use *AAAPackageDev* to regenerate **lc3-assembly.tmLanguage** from this file.
+=======
+# lc2200-sublime
+sublime text syntax highlighting for LC-2200 for gatech CS-2200
+>>>>>>> 300c365f910c87691aad81cdb90930b3e50280c2
