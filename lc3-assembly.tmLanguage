@@ -10,19 +10,20 @@
 	<string>LC2200 Assembly</string>
 	<key>patterns</key>
 	<array>
-		<dict>
+<!-- 		<dict>
 			<key>comment</key>
 			<string>Comment format ;</string>
 			<key>match</key>
 			<string>!.*</string>
 			<key>name</key>
 			<string>comment.line</string>
-		</dict>
+		</dict> -->
+
 		<dict>
 			<key>comment</key>
-			<string>Register format R#</string>
+			<string>Register format $v#</string>
 			<key>match</key>
-			<string>(\$zero)|(\$at)|(\$v0)|(\$a0)|(\$a1)|(\$a2)|(\$t0)|(\$t1)|(\$t2)|(\$s0)|(\$s1)|(\$s2)|(\$k0)|(\$sp)|(\$fp)|(\$ra)</string>
+			<string>halt</string>
 			<key>name</key>
 			<string>entity.name.function.reg</string>
 		</dict>
@@ -30,7 +31,7 @@
 			<key>comment</key>
 			<string>Opcode format</string>
 			<key>match</key>
-			<string>((\s|^)([rR][tT][iI])|([nN][oO][tT])|([sS][tT][iIrR]?)|([jJ][sS][rR][rR]?)|([tT][rR][aA][pP])|(([bB][rR])[nN]?[zZ]?[pP]?)|([rR][eE][tT])|([jJ][mM][pP])|([aA][nNdD][dD])|([lL](([eE][aA])|([dD][iIrR]?)))|([hH][aA][lL][tT])|([iI][nN])|([oO][uU][tT])|([gG][eE][tT][cC])|([pP][uU][tT][sS][pP]?))\s</string>
+			<string>((\s|^)([aA][dD][dD])|([nN][aA][nN][dD])|([aA][dD][dD][iI])|([lL][wW])|([sS][wW])|([bB][eE][qQ])|([jJ][aA][lL][rR])|([sS][pP][oO][pP]))\s</string>
 			<key>name</key>
 			<string>support.class.8086/8088</string>
 		</dict>
@@ -38,7 +39,7 @@
 			<key>comment</key>
 			<string>Hexadecimal numbers format xFFFF</string>
 			<key>match</key>
-			<string>x[0-9A-F]{4}\s</string>
+			<string>(\$zero)|((x|(0x))[0-9A-Fa-f]+)</string>
 			<key>name</key>
 			<string>constant.numeric.hex</string>
 		</dict>
@@ -46,7 +47,7 @@
 			<key>comment</key>
 			<string>Binary numbers format b10</string>
 			<key>match</key>
-			<string>(b[01]+)\s</string>
+			<string>((b|(0b))[01]+)</string>
 			<key>name</key>
 			<string>constant.numeric.bin</string>
 		</dict>
@@ -70,7 +71,7 @@
 			<key>comment</key>
 			<string>Directive format</string>
 			<key>match</key>
-			<string>\.(([oO][rR][iI][gG])|([fF][iI][lL][lL])|([eE][nN][dD])|([bB][lL][kK][wW])|([sS][tT][rR][iI][nN][gG][zZ]))</string>
+			<string>(\.[wW][oO][rR][dD])</string>
 			<key>name</key>
 			<string>entity.name.function.directives</string>
 		</dict>

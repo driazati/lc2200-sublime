@@ -4,8 +4,6 @@
 
 Mostly taken from [LC3-Assembly](https://github.com/wufufufu/Sublime-LC3).
 
-## Usage:
-
-Install:
+## Installation:
   
 Put entire folder in sublime packages directory (preferences -> browse packages)
