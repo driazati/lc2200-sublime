@@ -10,20 +10,27 @@
 	<string>LC2200 Assembly</string>
 	<key>patterns</key>
 	<array>
-<!-- 		<dict>
+		<dict>
+			<key>comment</key>
+			<string>Comment format ;</string>
+			<key>match</key>
+			<string>(halt)|(la)|(noop)</string>
+			<key>name</key>
+			<string>entity.name.tag</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Comment format ;</string>
 			<key>match</key>
 			<string>!.*</string>
 			<key>name</key>
 			<string>comment.line</string>
-		</dict> -->
-
+		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Register format $v#</string>
 			<key>match</key>
-			<string>halt</string>
+			<string>(\$zero)|(\$at)|(\$v0)|(\$a0)|(\$a1)|(\$a2)|(\$t0)|(\$t1)|(\$t2)|(\$s0)|(\$s1)|(\$s2)|(\$k0)|(\$sp)|(\$fp)|(\$ra)</string>
 			<key>name</key>
 			<string>entity.name.function.reg</string>
 		</dict>
